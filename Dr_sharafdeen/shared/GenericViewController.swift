@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class GenericView: UIViewController {
+class GenericViewController: UIViewController {
     func buildNavigationBar() {
         self.navigationController?.navigationBar.barTintColor = UIColor(hex: "E92C19")
         let leftView = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 40))
@@ -58,9 +58,26 @@ class GenericView: UIViewController {
     //MARK: Return to Home Screen
     @objc func showMenus(_ sender: UIButton) {
         debugPrint("working")
+        let menuViewController = MenuViewController(nibName: "MenuViewController", bundle: nil)
+        menuViewController.modalPresentationStyle = .overCurrentContext
+        menuViewController.transitioningDelegate = self
+        present(menuViewController, animated: true)
     }
     
     @objc func searchText(_ sender: UIButton) {
         //self.navigationController?.navigationItem.rightBarButtonItem.
+    }
+}
+
+extension GenericViewController: UIViewControllerTransitioningDelegate {
+    
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        SideMenuTransition.sharedInstance.isPresenting = true
+        return SideMenuTransition.sharedInstance
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        SideMenuTransition.sharedInstance.isPresenting = false
+        return SideMenuTransition.sharedInstance
     }
 }

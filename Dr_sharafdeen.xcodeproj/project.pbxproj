@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5B7A5FD254776EE00364692 /* SideMenuTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B7A5FC254776EE00364692 /* SideMenuTransition.swift */; };
+		A5B7A60D2547809B00364692 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B7A60B2547809B00364692 /* MenuViewController.swift */; };
+		A5B7A60E2547809B00364692 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B7A60C2547809B00364692 /* MenuViewController.xib */; };
+		A5B7A61125478B9100364692 /* MenuViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B7A60F25478B9100364692 /* MenuViewCells.swift */; };
+		A5B7A61225478B9100364692 /* MenuViewCells.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B7A61025478B9100364692 /* MenuViewCells.xib */; };
 		A5D10EB02520FB4300F9C193 /* shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D10EAF2520FB4300F9C193 /* shared.swift */; };
 		A5D10EB5252103CB00F9C193 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D10EB3252103CB00F9C193 /* RegistrationViewController.swift */; };
 		A5D10EB6252103CB00F9C193 /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5D10EB4252103CB00F9C193 /* RegistrationViewController.xib */; };
@@ -14,7 +19,7 @@
 		A5D10EBA25222C6000F9C193 /* RegistrationViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5D10EB825222C6000F9C193 /* RegistrationViewController2.xib */; };
 		A5D10ECA25228D0100F9C193 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D10EC825228D0100F9C193 /* MainViewController.swift */; };
 		A5D10ECB25228D0100F9C193 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5D10EC925228D0100F9C193 /* MainViewController.xib */; };
-		A5D10ECD25228D4C00F9C193 /* GenericView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D10ECC25228D4C00F9C193 /* GenericView.swift */; };
+		A5D10ECD25228D4C00F9C193 /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D10ECC25228D4C00F9C193 /* GenericViewController.swift */; };
 		A5FDACB82518C20000A72FED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FDACB72518C20000A72FED /* AppDelegate.swift */; };
 		A5FDACC12518C20200A72FED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5FDACC02518C20200A72FED /* Assets.xcassets */; };
 		A5FDACC42518C20200A72FED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5FDACC22518C20200A72FED /* LaunchScreen.storyboard */; };
@@ -58,6 +63,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A5B7A5FC254776EE00364692 /* SideMenuTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTransition.swift; sourceTree = "<group>"; };
+		A5B7A60B2547809B00364692 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		A5B7A60C2547809B00364692 /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		A5B7A60F25478B9100364692 /* MenuViewCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewCells.swift; sourceTree = "<group>"; };
+		A5B7A61025478B9100364692 /* MenuViewCells.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewCells.xib; sourceTree = "<group>"; };
 		A5D10EAF2520FB4300F9C193 /* shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shared.swift; sourceTree = "<group>"; };
 		A5D10EB3252103CB00F9C193 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		A5D10EB4252103CB00F9C193 /* RegistrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationViewController.xib; sourceTree = "<group>"; };
@@ -65,7 +75,7 @@
 		A5D10EB825222C6000F9C193 /* RegistrationViewController2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationViewController2.xib; sourceTree = "<group>"; };
 		A5D10EC825228D0100F9C193 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A5D10EC925228D0100F9C193 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
-		A5D10ECC25228D4C00F9C193 /* GenericView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericView.swift; sourceTree = "<group>"; };
+		A5D10ECC25228D4C00F9C193 /* GenericViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericViewController.swift; sourceTree = "<group>"; };
 		A5FDACB42518C20000A72FED /* Dr_sharafdeen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dr_sharafdeen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5FDACB72518C20000A72FED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5FDACC02518C20200A72FED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -108,11 +118,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A5B7A5FE2547776C00364692 /* MenuViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A5B7A60B2547809B00364692 /* MenuViewController.swift */,
+				A5B7A60C2547809B00364692 /* MenuViewController.xib */,
+				A5B7A60F25478B9100364692 /* MenuViewCells.swift */,
+				A5B7A61025478B9100364692 /* MenuViewCells.xib */,
+			);
+			path = MenuViewController;
+			sourceTree = "<group>";
+		};
 		A5D10EAE2520FB0200F9C193 /* shared */ = {
 			isa = PBXGroup;
 			children = (
 				A5D10EAF2520FB4300F9C193 /* shared.swift */,
-				A5D10ECC25228D4C00F9C193 /* GenericView.swift */,
+				A5D10ECC25228D4C00F9C193 /* GenericViewController.swift */,
+				A5B7A5FC254776EE00364692 /* SideMenuTransition.swift */,
 			);
 			path = shared;
 			sourceTree = "<group>";
@@ -200,6 +222,7 @@
 		A5FDACE72518E1B800A72FED /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A5B7A5FE2547776C00364692 /* MenuViewController */,
 				A5D10EB12521036B00F9C193 /* RegistrationViewController */,
 				A5FDACE82518E1CA00A72FED /* LoginViewController */,
 				A5D10EBB2522875100F9C193 /* MainViewController */,
@@ -343,6 +366,8 @@
 				A5D10EBA25222C6000F9C193 /* RegistrationViewController2.xib in Resources */,
 				A5D10EB6252103CB00F9C193 /* RegistrationViewController.xib in Resources */,
 				A5FDACC12518C20200A72FED /* Assets.xcassets in Resources */,
+				A5B7A61225478B9100364692 /* MenuViewCells.xib in Resources */,
+				A5B7A60E2547809B00364692 /* MenuViewController.xib in Resources */,
 				A5FDACED2518E25A00A72FED /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,11 +414,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5D10ECD25228D4C00F9C193 /* GenericView.swift in Sources */,
+				A5B7A5FD254776EE00364692 /* SideMenuTransition.swift in Sources */,
+				A5D10ECD25228D4C00F9C193 /* GenericViewController.swift in Sources */,
 				A5FDACEC2518E25A00A72FED /* LoginViewController.swift in Sources */,
 				A5D10EB925222C6000F9C193 /* RegistrationViewController2.swift in Sources */,
+				A5B7A60D2547809B00364692 /* MenuViewController.swift in Sources */,
 				A5D10EB02520FB4300F9C193 /* shared.swift in Sources */,
 				A5D10ECA25228D0100F9C193 /* MainViewController.swift in Sources */,
+				A5B7A61125478B9100364692 /* MenuViewCells.swift in Sources */,
 				A5D10EB5252103CB00F9C193 /* RegistrationViewController.swift in Sources */,
 				A5FDACB82518C20000A72FED /* AppDelegate.swift in Sources */,
 			);

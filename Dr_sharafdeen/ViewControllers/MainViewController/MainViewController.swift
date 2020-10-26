@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewController: GenericView {
+class MainViewController: GenericViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
