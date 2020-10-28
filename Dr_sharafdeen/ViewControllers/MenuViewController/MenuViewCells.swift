@@ -23,8 +23,16 @@ class MenuViewCells: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func updateCell(menuName: String) {
+    func updateCell(menuName: String, imageName: String) {
         self.menuLbl?.text = menuName
+        let image = UIImage(named: imageName)
+        self.img?.image = image
+    }
+    
+    func selectedMenu(){
+        self.menuLbl?.textColor = .red
+        //self.img?.image.tintColor = .red
+        self.img?.image = self.img?.image!.imageWithColor(color: .red)
     }
     
 }

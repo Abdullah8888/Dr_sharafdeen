@@ -29,3 +29,52 @@ extension UIColor {
         )
     }
 }
+
+//extension UIImage {
+//func maskWithColor(color: UIColor) -> UIImage? {
+//
+//    let maskImage = self.cgImage
+//    let width = self.size.width
+//    let height = self.size.height
+//    let bounds = CGRectMake(0, 0, width, height)
+//
+//    let colorSpace = CGColorSpaceCreateDeviceRGB()
+//    let bitmapInfo = CGBitmapInfo(rawValue: CGImageAlphaInfo.PremultipliedLast.rawValue)
+//    let bitmapContext = CGBitmapContextCreate(nil, Int(width), Int(height), 8, 0, colorSpace, bitmapInfo.rawValue) //needs rawValue of bitmapInfo
+//
+//    CGContextClipToMask(bitmapContext, bounds, maskImage)
+//    CGContextSetFillColorWithColor(bitmapContext, color.CGColor)
+//    CGContextFillRect(bitmapContext, bounds)
+//
+//    //is it nil?
+//    if let cImage = CGBitmapContextCreateImage(bitmapContext) {
+//        let coloredImage = UIImage(CGImage: cImage)
+//
+//        return coloredImage
+//
+//    } else {
+//        return nil
+//    }
+// }
+//}
+
+extension UIImage {
+    func imageWithColor(color: UIColor) -> UIImage {
+        UIGraphicsBeginImageContextWithOptions(self.size, false, self.scale)
+        color.setFill()
+
+        let context = UIGraphicsGetCurrentContext()
+        context?.translateBy(x: 0, y: self.size.height)
+        context?.scaleBy(x: 1.0, y: -1.0)
+        context?.setBlendMode(CGBlendMode.normal)
+
+        let rect = CGRect(origin: .zero, size: CGSize(width: self.size.width, height: self.size.height))
+        context?.clip(to: rect, mask: self.cgImage!)
+        context?.fill(rect)
+
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+
+        return newImage!
+    }
+}

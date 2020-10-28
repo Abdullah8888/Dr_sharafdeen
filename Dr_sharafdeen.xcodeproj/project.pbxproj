@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A594DCE12549A9350078EC2F /* ArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A594DCDF2549A9350078EC2F /* ArtistViewController.swift */; };
+		A594DCE22549A9350078EC2F /* ArtistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A594DCE02549A9350078EC2F /* ArtistViewController.xib */; };
 		A5B7A5FD254776EE00364692 /* SideMenuTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B7A5FC254776EE00364692 /* SideMenuTransition.swift */; };
 		A5B7A60D2547809B00364692 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B7A60B2547809B00364692 /* MenuViewController.swift */; };
 		A5B7A60E2547809B00364692 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B7A60C2547809B00364692 /* MenuViewController.xib */; };
@@ -63,6 +65,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A594DCDF2549A9350078EC2F /* ArtistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistViewController.swift; sourceTree = "<group>"; };
+		A594DCE02549A9350078EC2F /* ArtistViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtistViewController.xib; sourceTree = "<group>"; };
 		A5B7A5FC254776EE00364692 /* SideMenuTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTransition.swift; sourceTree = "<group>"; };
 		A5B7A60B2547809B00364692 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		A5B7A60C2547809B00364692 /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
@@ -118,6 +122,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A594DCDE2549A8ED0078EC2F /* ArtistViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A594DCDF2549A9350078EC2F /* ArtistViewController.swift */,
+				A594DCE02549A9350078EC2F /* ArtistViewController.xib */,
+			);
+			path = ArtistViewController;
+			sourceTree = "<group>";
+		};
 		A5B7A5FE2547776C00364692 /* MenuViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +235,7 @@
 		A5FDACE72518E1B800A72FED /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A594DCDE2549A8ED0078EC2F /* ArtistViewController */,
 				A5B7A5FE2547776C00364692 /* MenuViewController */,
 				A5D10EB12521036B00F9C193 /* RegistrationViewController */,
 				A5FDACE82518E1CA00A72FED /* LoginViewController */,
@@ -365,6 +379,7 @@
 				A5D10ECB25228D0100F9C193 /* MainViewController.xib in Resources */,
 				A5D10EBA25222C6000F9C193 /* RegistrationViewController2.xib in Resources */,
 				A5D10EB6252103CB00F9C193 /* RegistrationViewController.xib in Resources */,
+				A594DCE22549A9350078EC2F /* ArtistViewController.xib in Resources */,
 				A5FDACC12518C20200A72FED /* Assets.xcassets in Resources */,
 				A5B7A61225478B9100364692 /* MenuViewCells.xib in Resources */,
 				A5B7A60E2547809B00364692 /* MenuViewController.xib in Resources */,
@@ -414,6 +429,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A594DCE12549A9350078EC2F /* ArtistViewController.swift in Sources */,
 				A5B7A5FD254776EE00364692 /* SideMenuTransition.swift in Sources */,
 				A5D10ECD25228D4C00F9C193 /* GenericViewController.swift in Sources */,
 				A5FDACEC2518E25A00A72FED /* LoginViewController.swift in Sources */,
